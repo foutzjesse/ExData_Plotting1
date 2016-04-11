@@ -1,5 +1,5 @@
 power_consumption <- read.table("./household_power_consumption.txt", sep=";", header=T, na.strings="?", stringsAsFactors = F)
-power_consumption <- power_consumption[(power_consumption$Date == "2/1/2007") | (power_consumption$Date == "2/2/2007"),]
+power_consumption <- power_consumption[(power_consumption$Date == "1/2/2007") | (power_consumption$Date == "2/2/2007"),]
 
 png(filename="plot1.png",width=480, height=480, bg="white")
 hist(
